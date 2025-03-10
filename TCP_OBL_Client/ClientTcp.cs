@@ -30,12 +30,15 @@ namespace TCP_OBL_Client_JSON
                     {
                         Console.WriteLine("Enter command (Random, Add, Subtract, close): ");
                         string command = Console.ReadLine();
-                        
 
                         if (command == "close")
                         {
+                            Json_Obj jsonObj = new Json_Obj { Method = "close" };
+                            string jsonString = JsonSerializer.Serialize(jsonObj);
+                            writer.WriteLine(jsonString);
                             isRunning = false;
                         }
+
                         else if (command == "Random" || command == "Add" || command == "Subtract")
                         {
                             Console.WriteLine("Enter two numbers separated by space: ");

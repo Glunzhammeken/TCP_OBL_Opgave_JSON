@@ -49,6 +49,7 @@ namespace TCP_OBL_Server_JSON
                     {
                         isRunning = false;
                         writer.WriteLine("Connection closed.");
+                        Console.WriteLine($"Client disconnected: {tcpClient.Client.RemoteEndPoint}");
                     }
                     else
                     {
