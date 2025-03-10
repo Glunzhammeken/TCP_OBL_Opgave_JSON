@@ -40,10 +40,13 @@ namespace TCP_OBL_Client_JSON
                         {
                             Console.WriteLine("Enter two numbers separated by space: ");
                             string[] parts = Console.ReadLine().Split(' ');
-                            var jsonObj = new { Method = command, Num1 = int.Parse(parts[0]), Num2 = int.Parse(parts[1]) };
+                            Json_Obj jsonObj = new Json_Obj { Method = command, Num1 = int.Parse(parts[0]), Num2 = int.Parse(parts[1]) };
                             string jsonString = JsonSerializer.Serialize(jsonObj);
                             writer.WriteLine(jsonString);
-                            Console.WriteLine(reader.ReadLine());
+                            string msg = reader.ReadLine();
+
+                            Json_Obj json_Obj = JsonSerializer.Deserialize<Json_Obj>(msg);
+                            Console.WriteLine(json_Obj.Response);
 
                         }
                         else

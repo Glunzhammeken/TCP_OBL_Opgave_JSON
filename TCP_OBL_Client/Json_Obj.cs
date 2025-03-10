@@ -11,5 +11,7 @@ namespace TCP_OBL_Client_JSON
         public string Method { get; set; }
         public int Num1 { get; set; }
         public int Num2 { get; set; }
+        public string Response { get; set; }
+
     }
 }

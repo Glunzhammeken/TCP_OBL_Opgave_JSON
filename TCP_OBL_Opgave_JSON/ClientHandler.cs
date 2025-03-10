@@ -28,18 +28,21 @@ namespace TCP_OBL_Server_JSON
                     if (json_Obj.Method == "Random")
                     {
                         Random random = new Random();
-                        writer.WriteLine($"{random.Next(json_Obj.Num1, json_Obj.Num2)}");
+                        Json_Obj jsonResponse = new Json_Obj { Response = $"{random.Next(json_Obj.Num1, json_Obj.Num2)}" };
+                        writer.WriteLine($"{JsonSerializer.Serialize<Json_Obj>(jsonResponse)}");
 
 
                     }
                     else if (json_Obj.Method == "Add")
                     {
-                        writer.WriteLine($"{json_Obj.Num1 + json_Obj.Num2}");
+                        Json_Obj jsonResponse1 = new Json_Obj { Response = $"{(json_Obj.Num1 + json_Obj.Num2)}" };
+                        writer.WriteLine($"{JsonSerializer.Serialize<Json_Obj>(jsonResponse1)}");
                     }
                     else if (json_Obj.Method == "Subtract")
                     {
-                        
-                        writer.WriteLine($"{json_Obj.Num1 -json_Obj.Num2 }");
+
+                        Json_Obj jsonResponse2 = new Json_Obj { Response = $"{(json_Obj.Num1 - json_Obj.Num2)}" };
+                        writer.WriteLine($"{JsonSerializer.Serialize<Json_Obj>(jsonResponse2)}");
                     }
                     else if (json_Obj.Method == "close")
                     {
