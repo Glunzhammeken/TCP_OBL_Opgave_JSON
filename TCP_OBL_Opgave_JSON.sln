@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_OBL_Server_JSON", "TCP_OBL_Opgave_JSON\TCP_OBL_Server_JSON.csproj", "{9B1AD5E7-E15A-4F9A-A0E1-9BED0F58C97A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_OBL_Client_JSON", "TCP_OBL_Client\TCP_OBL_Client_JSON.csproj", "{44569796-6D2A-46CA-BDAF-69F1992BB776}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B1AD5E7-E15A-4F9A-A0E1-9BED0F58C97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1AD5E7-E15A-4F9A-A0E1-9BED0F58C97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1AD5E7-E15A-4F9A-A0E1-9BED0F58C97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1AD5E7-E15A-4F9A-A0E1-9BED0F58C97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44569796-6D2A-46CA-BDAF-69F1992BB776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44569796-6D2A-46CA-BDAF-69F1992BB776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44569796-6D2A-46CA-BDAF-69F1992BB776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44569796-6D2A-46CA-BDAF-69F1992BB776}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0859601E-1248-4EBC-A4A1-36863D304968}
+	EndGlobalSection
+EndGlobal
